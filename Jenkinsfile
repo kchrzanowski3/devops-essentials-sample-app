@@ -4,7 +4,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build automation'
-                sh 'gradle build'
                 archiveArtifacts artifacts: 'src/index.html'
             }
         }
